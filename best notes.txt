@@ -1,12 +1,12 @@
 
 +Let's dive into learning basic Linux terminal commands through a volleyball-themed lesson guide! Think of your system as a volleyball court, with different "players" (files and directories) needing specific instructions (commands) to perform well. Each step will build on the next, like a volleyball drill, so by the end, you'll be comfortable navigating and managing permissions in Debian.
-Step 1: Starting the Game – Opening the Terminal
+Step 1: Starting the Game â€“ Opening the Terminal
 * First, let's start our "game" by opening the terminal. If you're using Debian 12 on VMware, you can open the terminal by either:
 o Clicking the Terminal icon from the toolbar, or
 o Pressing Ctrl + Alt + T.
-This is like getting to the volleyball court – you’re ready to play!
+This is like getting to the volleyball court â€“ youâ€™re ready to play!
 
-Step 2: Navigation Drills – Moving Around the Court
+Step 2: Navigation Drills â€“ Moving Around the Court
 Think of directories as different positions on the volleyball court. You need to move around to access files and execute commands.
 * Current Position:
 bash
@@ -28,7 +28,7 @@ Copy code
 cd ..
 This moves you back one position on the court (up to the parent directory).
 
-Step 3: Finding Your Teammates – Listing Files and Directories
+Step 3: Finding Your Teammates â€“ Listing Files and Directories
 When you're on the court, you need to see where your teammates (files) are.
 * List Teammates:
 bash
@@ -46,7 +46,7 @@ Copy code
 ls -a
 Some "players" might be hidden (hidden files start with a dot .), and this command reveals them all.
 
-Step 4: Organizing the Team – Creating and Managing Files & Folders
+Step 4: Organizing the Team â€“ Creating and Managing Files & Folders
 You need to set up drills by organizing files and folders.
 * Create a New Folder:
 bash
@@ -64,7 +64,7 @@ Copy code
 cat practice_plan.txt
 The cat command shows the content of the file, like checking the plan before the game.
 
-Step 5: Game Strategy – Moving and Renaming Files
+Step 5: Game Strategy â€“ Moving and Renaming Files
 In volleyball, you sometimes need to move or rename players (files) to new positions.
 * Rename a File:
 bash
@@ -75,9 +75,9 @@ Here, mv renames "practice_plan.txt" to "game_plan.txt."
 bash
 Copy code
 mv game_plan.txt volleyball_drills/
-Now, you’ve moved the file "game_plan.txt" into the "volleyball_drills" folder.
+Now, youâ€™ve moved the file "game_plan.txt" into the "volleyball_drills" folder.
 
-Step 6: Permissions – Assigning Roles on the Court
+Step 6: Permissions â€“ Assigning Roles on the Court
 Every player (file or folder) has specific roles (permissions) to avoid chaos. You can see these roles using the ls -l command, which displays file permissions.
 * Permission Breakdown: Permissions are divided into three groups: owner, group, and others. Each group can:
 o r = read
@@ -98,7 +98,7 @@ o Group: read, execute (5)
 o Others: read, execute (5)
 Now you're the team captain, setting up who can access and modify the files.
 
-Step 7: Watching the Replay – Viewing and Editing Files
+Step 7: Watching the Replay â€“ Viewing and Editing Files
 * View File Contents:
 bash
 Copy code
@@ -110,7 +110,7 @@ Copy code
 nano game_plan.txt
 The nano command opens the file for editing, so you can change the plan mid-game!
 
-Step 8: Wrapping Up – Exiting and Cleaning the Court
+Step 8: Wrapping Up â€“ Exiting and Cleaning the Court
 After practice, it's important to clean up.
 * Delete a File:
 bash
@@ -124,7 +124,7 @@ rm -r volleyball_drills
 The -r flag is used to remove directories and their contents.
 
 Step 9: Summary and Review
-Here’s a quick recap of the key commands:
+Hereâ€™s a quick recap of the key commands:
 * pwd: Find out where you are on the court.
 * cd: Move to different positions.
 * ls: See your team (files) on the court.
@@ -134,5 +134,6 @@ Here’s a quick recap of the key commands:
 * chmod: Set file permissions for team roles.
 * rm: Remove files or folders when done.
 
-By following this volleyball-themed terminal guide, you’ll become comfortable navigating your Linux environment and managing files and permissions. With practice, these commands will feel like second nature!
+By following this volleyball-themed terminal guide, youâ€™ll become comfortable navigating your Linux environment and managing files and permissions. With practice, these commands will feel like second nature!
 
+This should work..
