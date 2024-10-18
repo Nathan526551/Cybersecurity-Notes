@@ -1,0 +1,139 @@
+
++Let's dive into learning basic Linux terminal commands through a volleyball-themed lesson guide! Think of your system as a volleyball court, with different "players" (files and directories) needing specific instructions (commands) to perform well. Each step will build on the next, like a volleyball drill, so by the end, you'll be comfortable navigating and managing permissions in Debian.
+Step 1: Starting the Game – Opening the Terminal
+* First, let's start our "game" by opening the terminal. If you're using Debian 12 on VMware, you can open the terminal by either:
+o Clicking the Terminal icon from the toolbar, or
+o Pressing Ctrl + Alt + T.
+This is like getting to the volleyball court – you’re ready to play!
+
+Step 2: Navigation Drills – Moving Around the Court
+Think of directories as different positions on the volleyball court. You need to move around to access files and execute commands.
+* Current Position:
+bash
+Copy code
+pwd
+The pwd command tells you where you are on the court (directory). This stands for "print working directory."
+* Moving to a New Position:
+bash
+Copy code
+cd /path/to/directory
+Use the cd (change directory) command to move to a new location. For example:
+bash
+Copy code
+cd /home/your_username/Documents
+Now you're on a new part of the court (Documents folder).
+* Going Back to the Last Position:
+bash
+Copy code
+cd ..
+This moves you back one position on the court (up to the parent directory).
+
+Step 3: Finding Your Teammates – Listing Files and Directories
+When you're on the court, you need to see where your teammates (files) are.
+* List Teammates:
+bash
+Copy code
+ls
+The ls command shows you the "players" (files and folders) in the current directory. Like seeing who's on your team!
+* List with Details:
+bash
+Copy code
+ls -l
+The -l option gives more detailed stats about the files, like a volleyball stat sheet (permissions, file size, etc.).
+* List All Players, Including Hidden Ones:
+bash
+Copy code
+ls -a
+Some "players" might be hidden (hidden files start with a dot .), and this command reveals them all.
+
+Step 4: Organizing the Team – Creating and Managing Files & Folders
+You need to set up drills by organizing files and folders.
+* Create a New Folder:
+bash
+Copy code
+mkdir volleyball_drills
+This creates a new folder called "volleyball_drills" for your practice.
+* Create a New File:
+bash
+Copy code
+touch practice_plan.txt
+Use touch to create a new empty file, like a game plan.
+* View the File Content:
+bash
+Copy code
+cat practice_plan.txt
+The cat command shows the content of the file, like checking the plan before the game.
+
+Step 5: Game Strategy – Moving and Renaming Files
+In volleyball, you sometimes need to move or rename players (files) to new positions.
+* Rename a File:
+bash
+Copy code
+mv practice_plan.txt game_plan.txt
+Here, mv renames "practice_plan.txt" to "game_plan.txt."
+* Move a File:
+bash
+Copy code
+mv game_plan.txt volleyball_drills/
+Now, you’ve moved the file "game_plan.txt" into the "volleyball_drills" folder.
+
+Step 6: Permissions – Assigning Roles on the Court
+Every player (file or folder) has specific roles (permissions) to avoid chaos. You can see these roles using the ls -l command, which displays file permissions.
+* Permission Breakdown: Permissions are divided into three groups: owner, group, and others. Each group can:
+o r = read
+o w = write
+o x = execute
+Example output from ls -l:
+diff
+Copy code
+-rwxr-xr--
+This shows that the owner has read (r), write (w), and execute (x) permissions, while the group can only read (r) and execute (x), and others can only read (r).
+* Change File Permissions:
+bash
+Copy code
+chmod 755 game_plan.txt
+The chmod command changes the file's permissions. Here, 755 means:
+o Owner: read, write, execute (7)
+o Group: read, execute (5)
+o Others: read, execute (5)
+Now you're the team captain, setting up who can access and modify the files.
+
+Step 7: Watching the Replay – Viewing and Editing Files
+* View File Contents:
+bash
+Copy code
+cat game_plan.txt
+This lets you review the game plan (file contents).
+* Edit File (Using nano Text Editor):
+bash
+Copy code
+nano game_plan.txt
+The nano command opens the file for editing, so you can change the plan mid-game!
+
+Step 8: Wrapping Up – Exiting and Cleaning the Court
+After practice, it's important to clean up.
+* Delete a File:
+bash
+Copy code
+rm game_plan.txt
+Use rm to delete the "game_plan.txt" file.
+* Delete a Folder:
+bash
+Copy code
+rm -r volleyball_drills
+The -r flag is used to remove directories and their contents.
+
+Step 9: Summary and Review
+Here’s a quick recap of the key commands:
+* pwd: Find out where you are on the court.
+* cd: Move to different positions.
+* ls: See your team (files) on the court.
+* mkdir: Create new folders for drills.
+* touch: Create new files like practice plans.
+* mv: Move or rename files/players.
+* chmod: Set file permissions for team roles.
+* rm: Remove files or folders when done.
+
+By following this volleyball-themed terminal guide, you’ll become comfortable navigating your Linux environment and managing files and permissions. With practice, these commands will feel like second nature!
+
+This should work..
