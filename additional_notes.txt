@@ -1,5 +1,7 @@
+Update: Documented steps for today's Bash script assignment, including system monitoring implementation.
 Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. Key areas of focus include:
 - Network security
 - Application security
 - Information security
 
+Update: Documented steps for today's Bash script assignment, including system monitoring implementation.
