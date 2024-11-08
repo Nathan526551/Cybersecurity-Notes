@@ -5,3 +5,6 @@ Cybersecurity is the practice of protecting systems, networks, and programs from
 - Information security
 
 Update: Documented steps for today's Bash script assignment, including system monitoring implementation.
+Update: Added another note to fulfill today's commit requirement.
+Update: Added documentation for today's work on the Bash script and system monitoring.
+
