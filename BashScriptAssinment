@@ -1,0 +1,11 @@
+#!/bin/bash
+# This script calculates age in days
+echo "Welcome to the age calculator!"
+read -p "Enter your age in years: " age_years
+if [[ ! $age_years =~ ^[0-9]+$ ]]; then
+    echo "Invalid input. Please enter a number."
+    exit 1
+fi
+age_days=$((age_years * 365))
+echo "You are approximately $age_days days old."
+
