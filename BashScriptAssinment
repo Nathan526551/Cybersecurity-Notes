@@ -1,5 +1,8 @@
 #!/bin/bash
-# This script calculates age in days
+
+# This script calculates age in days and checks system updates and errors
+
+# Age calculator
 echo "Welcome to the age calculator!"
 read -p "Enter your age in years: " age_years
 if [[ ! $age_years =~ ^[0-9]+$ ]]; then
@@ -8,4 +11,33 @@ if [[ ! $age_years =~ ^[0-9]+$ ]]; then
 fi
 age_days=$((age_years * 365))
 echo "You are approximately $age_days days old."
+
+# System monitoring
+echo "Would you like to check for system updates and errors? (y/n)"
+read -p "Enter choice: " user_choice
+
+if [[ $user_choice == "y" || $user_choice == "Y" ]]; then
+    echo "System Monitoring Report:"
+    echo "-------------------------"
+    
+    # Check for updates
+    echo "Checking for system updates..."
+    updates=$(apt list --upgradable 2>/dev/null | wc -l)
+    if [[ $updates -gt 1 ]]; then
+        echo "There are $(($updates - 1)) updates available."
+    else
+        echo "Your system is up to date!"
+    fi
+    
+    # Check for failed services
+    echo "Checking for failed services..."
+    failed_services=$(systemctl --failed --quiet | wc -l)
+    if [[ $failed_services -gt 0 ]]; then
+        echo "There are failed services. Please investigate."
+    else
+        echo "No failed services detected."
+    fi
+else
+    echo "Skipping system monitoring."
+fi
 
